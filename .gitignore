@@ -1,0 +1,18 @@
+.ipynb_checkpoints/
+__pycache__/
+
+# The following rules were originally used to ignore all datasets.
+# This is recommended when:
+# - Datasets are large
+# - Data is private or licensed
+# - Data is generated or frequently changing
+# - Data should be mounted via Docker volumes instead of committed
+#
+# data/*                   # Ignore all files inside the data directory
+# !data/.gitkeep            # Keep an empty data/ folder in the repo for structure & documentation
+#
+# Currently, small datasets will be committed to ensure notebooks run out-of-the-box
+
+# Ignore only large or generated data
+data/tmp/
+data/cache/
